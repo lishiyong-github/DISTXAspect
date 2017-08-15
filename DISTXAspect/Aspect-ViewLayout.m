@@ -21,7 +21,7 @@ AspectPatch(-, void, updateConstraints) {
     
     if (!self.didSetupConstraints)
     {
-        [self myUpdateConstraints];
+        [self myUpdateViewConstraints];
         self.didSetupConstraints = YES;
     }
     XAMessageForward(updateConstraints);
@@ -37,7 +37,7 @@ AspectPatch(-, void, setFrame:(CGRect)frame){//fix screenshot crash in iOS 9.x
 /**
  *  myUpdateConstraints for constraints set with PureLayout once
  */
-- (void)myUpdateConstraints{}
+- (void)myUpdateViewConstraints{}
 
 - (BOOL)didSetupConstraints
 {

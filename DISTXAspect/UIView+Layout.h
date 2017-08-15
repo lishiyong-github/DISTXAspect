@@ -10,5 +10,5 @@
 
 @interface UIView (Layout)
 @property (nonatomic, assign) BOOL didSetupConstraints;
-- (void)myUpdateConstraints;
+- (void)myUpdateViewConstraints;
 @end
